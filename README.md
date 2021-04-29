@@ -11,3 +11,12 @@
   Plugin 'vim-airline/vim-airline'
   Plugin 'valloric/youcompleteme'
 ```
+## Keymappings
+```
+ syntax on
+  colorscheme onedark
+
+  let mapleader=","
+  nnoremap <leader>gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+  nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
+```
