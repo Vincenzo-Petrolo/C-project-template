@@ -16,6 +16,5 @@ set includeexpr=substitute(v:fname,'\\.','/','g')
 set makeprg=make\ -C\ ../build\ -j9
 autocmd VimEnter * NERDTree | wincmd p
 
-map gn :bn<cr>
-map gp :bp<cr>
-map gd :bd<cr>  
+nnoremap <leader>gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
