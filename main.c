@@ -1,8 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(int argc, char *argv[])
 {
-	puts("Hello World!\n");
-
-	return 0;
+  puts("Hello, World!");
+  exit(EXIT_SUCCESS);
 }
