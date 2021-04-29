@@ -13,8 +13,3 @@ augroup END
 
 let &path.="src/include,/usr/include/AL,"
 set includeexpr=substitute(v:fname,'\\.','/','g')
-set makeprg=make\ -C\ ../build\ -j9
-autocmd VimEnter * NERDTree | wincmd p
-
-nnoremap <leader>gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
-nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
